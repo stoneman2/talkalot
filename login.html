@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkAlot</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="js/login.js" defer></script>
+</head>
+<body>
+
+<div class="register_container">
+    <div class="register_header">
+        <h1 class="register_title">Login</h1>
+        <h2 class="register_text">Login to start chatting with friends!</h2>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Mulish:ital,wght@0,310;1,310&display=swap" rel="stylesheet">
+    </div>
+    <img class = "register_gif" src="assets/images/TalkALot_Logo.png" alt="Login animation">
+
+    <form action="/user/login" method="post">
+        <div class="register_form_group">
+            <label for="username">Username / Email:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="register_form_group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="register_form_group">
+            <button type="submit" class="register-button">Login</button>
+        </div>
+    </form>
+
+    <div id="error_message" style="display: none;"></div>
+
+    <div class="register_form_group">
+        <div class="noaccount">
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

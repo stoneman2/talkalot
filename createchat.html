@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkAlot</title>
+    <link rel="stylesheet" href="styles/createchat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Mulish:ital,wght@0,310;1,310&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="chat_creator_container">
+    <h1 class = "chat_creator_title">Create a New Chat</h1>
+    <form action="/chatroom/create" method="post" enctype="multipart/form-data">
+        <div class="chat_creator_form_group">
+            <label for="chat-name">Chat Name:</label>
+            <input type="text" id="chat-name" name="chat-name" required>
+        </div>
+
+        <div class="chat_creator_form_group">
+            <label for="main-picture">Main Picture: </label>
+            <input type="file" id="main-picture" name="main-picture" accept="image/*" required>
+        </div>
+
+        <div class="chat_creator_form_group">
+            <label for="background-picture">Background Picture:</label>
+            <input type="file" id="background-picture" name="background-picture" accept="image/*">
+        </div>
+
+        <div class = "chat_creator_form_group">
+            <button type="submit" class="create-chat-button">Create Chat</button>
+            <button type="button" class="cancel-chat-button" onclick="window.location.href='feed.html'">Cancel</button>
+        </div>
+    </form>
+</div>
+</body>

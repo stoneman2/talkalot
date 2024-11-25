@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkAlot</title>
+    <link rel="stylesheet" href="styles/register.css">
+    <script src="js/register.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Mulish:ital,wght@0,310;1,310&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="register_container">
+    <div class="register_header">
+        <h1 class="register_title">Register</h1>
+        <h2 class="register_text">Create an account to chat with friends!</h2>
+    </div>
+    <form action="/user/register" method="post" enctype="multipart/form-data">
+        <div class="register_form_group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="register_form_group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="register_form_group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="register_form_group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+
+        <div class="register_form_group">
+            <label for="profile-picture">Profile Picture:</label>
+            <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+        </div>
+
+        <div class="register_form_group">
+            <button type="submit" class="register-button">Register</button>
+        </div>
+    </form>
+
+    <div id="error_message" style="display: none;"></div>
+
+    <div class="register_form_group">
+        <div class="noaccount">
+            <p>Already have an account? <a href="login.html">Login here!</a></p>
+        </div>
+    </div>
+</div>
+</body>

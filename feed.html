@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkAlot</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/feed.css">
+    <script src="js/feed.js" defer></script>
+</head>
+<body>
+    <nav class = "nav_container">
+        <div class = "nav_contents left">
+            <img id = "talkalot_logo" src="assets/images/icon.png" alt="TalkAlot Logo">
+            <h1 class="nav_text2" onclick="window.location.href='feed.html'">Feed</h1>
+            <h1 class="nav_text2" onclick="window.location.href='chatroom.html'">Chatrooms</h1>
+        </div>
+
+        <div class = "nav_contents right">
+            <button class="logout_button">Logout</button>
+            <img id = "profile_picture" class = "nav_pic" src="" alt="Profile Picture">
+            <h1 id = "profile_username" class ="nav_text">.....</h1>
+        </div>
+    </nav>
+
+    <div class = "chat_layout_container">
+        <div class="side_container">
+            <div class="side_contents">
+                <h2 id = "my_chatrooms">My Chatrooms</h2>
+                <button class="chatroom_button" id = "create_chatroom">Create Chatroom</button>
+            </div>
+        </div>
+    </div>
+
+    <div class = "main_feed_container">
+        <div id = "popular_chats" class="feed_item_container">
+            <h2 class="section_title">Most Popular</h2>
+        </div>
+
+        <div id = "all_chats" class="feed_item_container">
+            <h2 class="section_title">All Chats</h2>
+        </div>
+    </div>
+</body>

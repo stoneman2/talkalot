@@ -1,0 +1,165 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-image: url('../assets/images/theircenter.gif');
+    height: 100vh;
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+}
+
+.register_container {
+    position: absolute;
+    top: 50%; /* Centering */
+    left: 50%; /* Centering */
+    width: 60%;
+    transform: translate(-50%, -50%); /* Centering */
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(51, 55, 58, 0.975);
+}
+
+.register_form_group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.register_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register_title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e8e6e3;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    text-align: center;
+    border-bottom: 2px solid #3b1a6d;
+}
+
+.register_text {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #e8e6e3;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.register_form_group label {
+    font-weight: bold;
+    color: #e8e6e3;
+    margin-right: 10px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.register_form_group label:hover {
+    color: #e8e6e3;
+}
+
+.register_form_group input {
+    flex: 1;
+    box-sizing: border-box;
+    min-width: 0;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: #e8e6e3;
+}
+
+.register_form_group .register-button {
+    padding: 20px 100px;
+    margin-top: 20px;
+    background-color: #241446;
+    display: block;
+    margin: 20px auto;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.register_form_group .register-button:hover {
+    background-color: #3b1a6d;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.register_form_group .noaccount {
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e8e6e3;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    text-align: center;
+    border-bottom: 2px solid #3b1a6d;
+    margin-top: 20px;
+}
+
+#error_message {
+    font-size: 1.2em;
+    color: #ff0000;
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #e2b572;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .register_container {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+    }
+
+    .register_form_group {
+        padding: 0.5rem;
+        font-size: 0.8em;
+    }
+    .register_form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        padding: 0.4rem;
+    }
+}

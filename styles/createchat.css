@@ -1,0 +1,125 @@
+body {
+    font-family: "Mulish", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-image: url('../assets/images/citystreet.gif');
+    height: 100vh;
+    margin: 0;
+}
+
+.chat_creator_container {
+    width: 60%;
+    height: 15%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(51, 55, 58, 0.975);
+}
+
+.chat_creator_form_group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+.chat_creator_title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e8e6e3;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    text-align: center;
+    border-bottom: 2px solid #3b1a6d;
+}
+
+.chat_creator_form_group label {
+    font-weight: bold;
+    color: #e8e6e3;
+    margin-right: 10px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.chat_creator_form_group label:hover {
+    color: #3b1a6d;
+    justify-content: space-between;
+}
+
+.chat_creator_form_group input[type="text"] {
+    flex: 1;
+    box-sizing: border-box;
+    min-width: 0;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: #e8e6e3;
+}
+
+.chat_creator_form_group button {
+    padding: 10px 20px;
+    background-color: #241446;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat_creator_form_group button:hover {
+    background-color: #3b1a6d;
+}
+
+.chat_creator_form_group .create-chat-button {
+    padding: 20px 100px;
+    margin-top: 20px;
+    background-color: #241446;
+    display: block;
+    margin: 20px auto;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat_creator_form_group .create-chat-button:hover {
+    background-color: #241446;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.chat_creator_form_group .cancel-chat-button {
+    padding: 20px 100px;
+    margin-top: 20px;
+    background-color: #241446;
+    display: block;
+    margin: 20px auto;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

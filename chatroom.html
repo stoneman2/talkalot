@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkAlot</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="js/chatroom.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Mulish:ital,wght@0,310;1,310&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class = "nav_container">
+        <div class = "nav_contents left">
+            <img id = "talkalot_logo" src="assets/images/icon.png" alt="TalkAlot Logo">
+            <h1 class="nav_text2" onclick="window.location.href='feed.html'">Feed</h1>
+            <h1 class="nav_text2" onclick="window.location.href='chatroom.html'">Chatrooms</h1>
+        </div>
+
+        <div class = "nav_contents right">
+            <button class="logout_button">Logout</button>
+            <img id = "profile_picture" class = "nav_pic" src="" alt="Profile Picture">
+            <h1 id = "profile_username" class ="nav_text">.....</h1>
+        </div>
+    </nav>
+
+    <div class = "chat_layout_container">
+        <div class="side_container">
+            <div class="side_contents">
+                <h2 id = "my_chatrooms">My Chatrooms</h2>
+                <button class="chatroom_button" id = "create_chatroom">Create Chatroom</button>
+            </div>
+        </div>
+    
+        <nav class = "chatroom_nav">
+            <div class = "chatroom_title_container">
+                <h2 id = "chatroom_title">.....</h2>
+            </div>
+
+            <div class = "chatroom_buttons_container">
+                <button id ="like_button">
+                    <img id = "like" src="assets/images/unliked.png" alt="Like">
+                </button>
+    
+                <button id = "leave_button">Leave Chat</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class = "chatroom_container">
+        <div class = "chatroom_message_container">
+        </div>
+
+        <div class="message_input_container">
+            <input type="text" class="message_input" placeholder="Type a message...">
+            <button class="message_input_send_button"></button>
+        </div>
+    </div>
+</body>
